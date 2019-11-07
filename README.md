@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # serve
 
 
@@ -31,3 +32,6 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+=======
+# serve
+>>>>>>> df5f793c1cda9e1d37c5b4e865457e39013a3246
