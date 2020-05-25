@@ -29,8 +29,7 @@ module.exports = app => {
   },
   {
 
-    paranoid: true,
-    timestamps: false,
+
   }
   );
 

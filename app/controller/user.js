@@ -38,16 +38,18 @@ class UserController extends Controller {
       },
       ctx.request.body
     );
+
     const { userName, password } = this.ctx.request.body;
-
-
-    const user = await this.ctx.model.User.findAll({
+    const user = await this.ctx.model.User.findOne({
       Where: {
         userName,
       },
-      row: true,
     });
-    this.ctx.logger.info(user);
+    if (user.password === password) {
+      ctx.helper.$success();
+    } else {
+
+    }
   }
 }
 
